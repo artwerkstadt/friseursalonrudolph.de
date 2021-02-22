@@ -1,0 +1,389 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.7;
+    font-weight: 300;
+    font-family: 'Roboto Condensed', serif;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', serif;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin-bottom: 1em;
+}
+
+p {
+    margin: 1em 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.dark *, .dark-background *,
+.ci-background *, .ci-background a, a.ci-background {
+    color: #fff;
+}
+
+.ci-background {
+    background: rgba(226, 1, 123, 0.65);
+}
+
+.ci-background.button:hover {
+    background: rgba(226, 1, 123, 1);
+}
+
+.dark-background {
+    background: rgba(20, 20, 20, 0.65);
+}
+
+.card {
+    -webkit-border-radius: .3125rem;
+    -moz-border-radius: .3125rem;
+    border-radius: .3125rem;
+    padding: 1em;
+}
+
+.card img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.card-title {
+    border-bottom: 1px solid #fff;
+    padding-bottom: .5em;
+}
+
+.notification {
+    border-left: 1rem solid #e2017b;
+}
+
+.shadow {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.hidden {
+    display: block;
+    overflow: hidden;
+    height: 0;
+    width: 0;
+}
+
+.bubble {
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.button {
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+}
+
+.frontpage > section.background {
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width: 100%;
+}
+
+.frontpage > section.background:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+
+.frontpage > section {
+    min-height: 100vh;
+}
+
+.frontpage > section.intro {
+    background: #000;
+    position: relative;
+    z-index: 1;
+}
+
+.frontpage > section.intro:before {
+    background-image: url('../images/rezeption.jpg');
+    opacity: 0.45;
+    background-position: 50% 0;
+}
+
+.frontpage > section.intro h1 {
+    font-size: 1.2em;
+}
+
+.frontpage > section.intro h1:before {
+    display: block;
+    content: ' ';
+    width: 100%;
+    height: 2rem;
+    background-image: url(../images/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10em 0 1em;
+}
+
+.frontpage > section.intro p {
+    margin: 1em 0;
+}
+
+.frontpage > section.about {
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.frontpage > section.about:before {
+    background-image: url('../images/schere-und-kamm.jpg');
+    background-position: 50% 50%;
+    opacity: .75;
+}
+
+.frontpage > section.about .section-title {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.frontpage > section.about .card {
+    padding-top: 4.5rem;
+    position: relative;
+    margin-top: 20rem;
+}
+
+.frontpage > section.about .card > h3 {
+    font-family: 'Great Vibes', serif;
+    font-size: 2.5rem;
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    top: -16.5rem;
+    left: 50%;
+    margin-left: -10rem;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.frontpage > section.about .card > h3 > strong {
+    font-family: 'Oswald', serif;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    display: block;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin: 8rem 1.5rem 0;
+    padding: 0;
+}
+
+.frontpage > section.about .card > h3 > strong:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: .5em;
+    content: '\f005 \f005 \f005 \f005 \f005';
+    display: block;
+    margin-top: -1.8em;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+.frontpage > section.about .signature {
+    display: inline-block;
+    width: 49%;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.frontpage > section.about .signature:before {
+    content: ' ';
+    display: inline-block;
+    height: 0;
+    width: 0;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 4rem 12rem 0 0;
+    margin-top: -2.25rem;
+    left: 50%;
+    margin-left: -6rem;
+}
+
+.frontpage > section.about .thorsten.signature:before {
+    background-image: url('../images/signature-thorsten.svg');
+}
+
+.frontpage > section.about .erik.signature:before {
+    background-image: url('../images/signature-erik.svg');
+    margin-left: -5.5rem;
+}
+
+.frontpage > section.location .section-title {
+    margin-top: 1em;
+    font-size: 2em;
+}
+
+.frontpage > section.location table {
+    width: 100%;
+}
+
+.frontpage > section.location table.opening-hours th {
+    font-weight: bold;
+    text-align: right;
+    padding: 0 .25em 1em 0;
+}
+
+.frontpage > section.location table.opening-hours td {
+    text-align: left;
+    padding: 0 0 1em .25em;
+}
+
+
+.frontpage > section.location table.services {
+    margin-bottom: 1em;
+}
+
+.frontpage > section.location table.services th {
+    font-weight: bold;
+    text-align: left;
+    padding-top: 1em;
+}
+
+.frontpage > section.location table.services tr:first-child th {
+    padding-top: 0;
+}
+
+.frontpage > section.location table.services tr td {
+    text-align: left;
+}
+
+.frontpage > section.location table.services tr td:last-child {
+    text-align: right;
+}
+
+.frontpage > section.location .card {
+    height: 100%;
+    position: relative;
+    padding-bottom: 3.7rem;
+}
+
+.frontpage > section.location .card .button {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-border-bottom-left-radius: .3125rem;
+    -webkit-border-bottom-right-radius: .3125rem;
+    -moz-border-radius-bottomleft: .3125rem;
+    -moz-border-radius-bottomright: .3125rem;
+    border-bottom-left-radius: .3125rem;
+    border-bottom-right-radius: .3125rem;
+}
+
+.frontpage > section.intro > .container > .grid,
+.frontpage > section.about > .container > .grid,
+.frontpage > section.location > .container > .grid {
+    height: 100%;
+}
+
+
+.frontpage > section.hainhausen {
+    background: #000;
+}
+
+.frontpage > section.hainhausen:before {
+    background-image: url('../images/schneidestationen.jpg');
+    background-position: 50% 0;
+    opacity: 0.5;
+}
+
+
+.frontpage > section.juegesheim {
+    background: #fff;
+}
+
+.frontpage > section.juegesheim:before {
+    background-image: url('../images/waschstationen.jpg');
+    background-position: 50% 0;
+    opacity: 0.5;
+}
+
+footer {
+    background: #202020;
+    color: #fff;
+}
+
+footer nav {
+    text-align: right;
+}
+
+footer nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 576px) {
+    .frontpage > section.intro h1:before {
+
+    }
+}
+
+@media (min-width: 768px) {
+    .frontpage > section.intro h1:before {
+        height: 5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .frontpage > section.intro h1:before {
+        height: 7rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .frontpage > section.intro h1:before {
+        height: 8rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .frontpage > section.intro h1:before {
+
+    }
+}

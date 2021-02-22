@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  web:
+    image: library/nginx:1.19-alpine
+    volumes:
+      - ./public:/usr/share/nginx/html:ro
+    ports:
+    - "8080:80"
