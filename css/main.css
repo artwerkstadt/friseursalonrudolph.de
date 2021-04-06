@@ -96,6 +96,14 @@ p {
     text-align: center;
 }
 
+.button.disabled {
+    background: #606060;
+}
+.button.disabled:hover {
+    background: #404040;
+    cursor: not-allowed;
+}
+
 .frontpage > section.background {
     overflow: hidden;
     -webkit-backface-visibility: hidden;
