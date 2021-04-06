@@ -240,15 +240,6 @@ p {
     margin-left: -6rem;
 }
 
-.frontpage > section.about .thorsten.signature:before {
-    background-image: url('../images/signature-thorsten.svg');
-}
-
-.frontpage > section.about .erik.signature:before {
-    background-image: url('../images/signature-erik.svg');
-    margin-left: -5.5rem;
-}
-
 .frontpage > section.location .section-title {
     margin-top: 1em;
     font-size: 2em;
