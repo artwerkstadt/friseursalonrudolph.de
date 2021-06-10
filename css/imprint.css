@@ -1,0 +1,14 @@
+
+.imprint > section.content {
+    background: #000;
+    position: relative;
+    z-index: 1;
+}
+
+.imprint > section.content:before {
+    background-image: url('../images/waschstationen.jpg');
+    background-size: cover;
+    opacity: 0.20;
+    background-position: 50% 0;
+}
+
